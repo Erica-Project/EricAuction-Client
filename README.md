@@ -1,1 +1,1 @@
-# EricAuction-client
+# EricAuction-Client
