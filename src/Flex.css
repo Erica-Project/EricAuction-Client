@@ -11,6 +11,11 @@
     align-items: center;
 }
 
+.headerbar {
+    position: sticky;
+    top:0;
+}
+
 
 .side {
     flex-basis: 20%;
