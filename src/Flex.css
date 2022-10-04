@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+
+.side {
+    flex-basis: 20%;
+}
+
+.main {
+    flex-basis: 80%;
+}
+
+.center {
+    flex-basis: 60%;
+    
+}

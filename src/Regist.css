@@ -1,0 +1,53 @@
+.title {
+    font-size: 20px;
+    margin-top : 45%;
+}
+
+.titleEx {
+    font-size: 20px;
+    
+}
+.imgBox {
+    margin-top: 1%;
+    margin-bottom : 1%;
+    width:25%;
+    padding-bottom: 25%;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: #F4F4F4;
+}
+
+.titleInput {
+    height: 40px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.titleInputprice {
+    height: 40px;
+    width: 40%;
+    border: 1px solid;
+}
+
+.explaneInput {
+    margin-top : 20px;
+    height: 120px;
+    width: 99%;
+    border: 1px solid;
+    padding-top: 0px;
+    justify-content: "flex-start";
+    
+}
+
+.explaneInput::placeholder {
+    font-size: 15px;
+}
+
+
+.titleInput::placeholder {
+    font-size: 15px;
+}
+
+.titleInputprice::placeholder {
+    font-size: 15px;
+}
