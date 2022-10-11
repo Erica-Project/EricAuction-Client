@@ -1,0 +1,41 @@
+.Hcontainer {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 180px;
+}
+
+.centercontainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+
+.titleBox {
+    display: flex;
+    background-color:blue;
+    height:100%;
+    flex:3;
+    align-items: center;
+}
+
+.HeaderTitle {
+    font-size: 40px;
+    background-color: white;
+    
+}
+
+.searchBox {
+    display: flex;
+    background-color: aqua;
+    height: 100%;
+    flex:6;
+}
+
+.etcBox {
+    display: flex;
+    background-color: yellow;
+    height: 100%;
+    flex:4;
+}

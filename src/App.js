@@ -14,7 +14,19 @@ function App() {
   };
 
   const setImage = (e) => {
-    console.log(e.target.files[0]);
+    const formData = new FormData();
+    formData.append('image', e.target.files[0]);
+
+    fetch("http://18.183.252.212:8080/uploadFile",{
+      method: "POST",
+      mode: "cors",
+      header:{
+        "Content-Type": "application/json",
+      },
+      body:JSON.stringify({
+        file: formData
+      })
+    }).then((response) => console.log(response));
   };
 
   return (
@@ -41,7 +53,7 @@ function App() {
                 accept="img/*"
                 ref={fileInput}
                 onChange={setImage}
-                style={{ display: "none" }}
+                //style={{ display: "none" }}
               ></input>
             </div>
           </div>

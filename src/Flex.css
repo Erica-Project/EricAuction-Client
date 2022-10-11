@@ -18,7 +18,7 @@
 
 
 .side {
-    flex-basis: 20%;
+    flex-basis: 15%;
 }
 
 .main {
@@ -26,6 +26,6 @@
 }
 
 .center {
-    flex-basis: 60%;
+    flex-basis: 70%;
     
 }
