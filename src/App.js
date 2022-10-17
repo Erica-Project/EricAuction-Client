@@ -2,32 +2,58 @@ import "./App.css";
 import "./Flex.css";
 import "./Regist.css";
 import HorizonLine from "./Horizontalline";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import React from "react";
 import HeaderBar from "./HeaderBar";
 
 function App() {
-  const fileInput = React.createRef(null);
+  const fileInput = React.useRef(null);
+  const [showImage,setshowImage] = useState([]);
 
   const handleImageButton = (e) => {
-    fileInput.current.click();
+    fileInput.current?.click();
+    e.preventDefault();
   };
 
-  const setImage = (e) => {
+  const setImage = async(e) => {
+    const img = e.target.files;
+    setshowImage((showImage)=>[...showImage,...img])
+    // const formData = new FormData();
+    // formData.append('file', img);
+    // fetch("http://18.183.252.212:8080/uploadFile",{
+    //   method: "POST",
+    //   header:{
+    //     "Content-Type": "multipart/form-data",
+    //   },
+    //   body:formData
+    // })
+    // .then((response) => {
+    //   response.json().then((data)=>{
+    //     console.log(data);
+    //   })})
+  };
+  async function upload(){
     const formData = new FormData();
-    formData.append('image', e.target.files[0]);
-
-    fetch("http://18.183.252.212:8080/uploadFile",{
+    for(let i = 0;i<showImage.length;i++){
+      formData.append('files',showImage[i])
+    }
+    for(let key of formData){
+      console.log(key);
+    }
+    for(let key of formData.values()){
+      console.log(key);
+    }
+    const response = await fetch("http://18.183.252.212:8080/uploadMultipleFiles",{
       method: "POST",
-      mode: "cors",
       header:{
-        "Content-Type": "application/json",
+        "Content-Type": "multipart/form-data",
       },
-      body:JSON.stringify({
-        file: formData
-      })
-    }).then((response) => console.log(response));
-  };
+      body: formData
+    })
+    const result = await response.json()
+    console.log(result)
+    
+  }
 
   return (
     <div>
@@ -53,8 +79,12 @@ function App() {
                 accept="img/*"
                 ref={fileInput}
                 onChange={setImage}
-                //style={{ display: "none" }}
+                multiple
+                style={{ display: "none" }}
               ></input>
+              {showImage.map((data) => <span key={data.name}>{ data.name }</span>)} 
+              <button  onClick={upload}></button>
+              {/* 키값보류 */}
             </div>
           </div>
           <HorizonLine />

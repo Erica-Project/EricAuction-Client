@@ -19,7 +19,9 @@ const HeaderBar = () => {
             </div>
           </div>
           <div className="searchBox">
-
+            <div style={{width:'100%'}}>
+              <input type="search" className="searchInput" placeholder="찾고 있는 상품을 검색해 주세요"></input>
+            </div>
           </div>
           <div className="etcBox">
 

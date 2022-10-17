@@ -31,6 +31,12 @@
     background-color: aqua;
     height: 100%;
     flex:6;
+    align-items: center;
+}
+
+.searchInput {
+    height: 40px;
+    width: 100%;
 }
 
 .etcBox {
