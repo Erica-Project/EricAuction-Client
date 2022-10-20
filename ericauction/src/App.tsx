@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <HeaderBar />
-      <Home/>
+      <RegistSell/>
     </div>
     
   );

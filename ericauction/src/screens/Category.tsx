@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Category.css";
+import "../css/Category.css";
 
 const categories = ['남성 의류', '여성 의류', '신발', '가방', '시계/쥬얼리', '디지털/가전', '스타굿즈'];
 const SubCategories: any = {
