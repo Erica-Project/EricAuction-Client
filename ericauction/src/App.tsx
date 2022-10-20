@@ -1,11 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import RegistSell from './screen/RegistSell';
+import RegistSell from './screens/RegistSell';
+import HeaderBar from './headerbar/HeaderBar';
+import Home from './screens/Home';
 
 function App() {
   return (
-    <RegistSell/>
+    <div>
+      <HeaderBar />
+      <Home/>
+    </div>
+    
   );
 }
 

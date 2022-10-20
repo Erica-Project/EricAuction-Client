@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    align-items: center;
+}
+.containerTitlecategory {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.headerbar {
+    position: sticky;
+    top:0;
+}
+
+
+.side {
+    flex-basis: 20%;
+}
+
+.main {
+    flex-basis: 80%;
+}
+
+.center {
+    flex-basis: 60%;
+    
+}

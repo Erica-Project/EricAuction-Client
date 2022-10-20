@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+
+.layout {
+    width: 33%;
+    border: 1px solid;
+    float: left;
+}
+
+.btn-layout {
+    width : 100%;
+    background-color: #C8FFD4;
+    border: none;
+    margin-bottom : 2px;
+    margin-top: 2px;
+    padding-top : 5px;
+}
+
+.btn-font {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size : 1.5rem;
+    font-weight: bold;
+}
