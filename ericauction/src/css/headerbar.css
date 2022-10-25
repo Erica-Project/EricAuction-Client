@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.Hcontainer {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    position: sticky;
+    top:0;
+    border-bottom: 1px solid grey;
+    background-color: #FFFFFF;
+}
+.centercontainertop {
+    height: 10%;
+    
+}
+
+.centercontainer {
+    display: flex;
+    flex-direction: row;
+    height: 65%;
+    
+    
+}
+
+.centercontainerbottom {
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    
+    
+}
+
+.titleBox {
+    display: flex;
+    height:100%;
+    flex:3;
+    align-items: center;
+}
+
+.HeaderTitle {
+    font-size: 40px;
+    background-color: white;
+    color: #3B9AE1;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.searchBox {
+    display: flex;
+    height: 100%;
+    flex:6;
+    align-items: center;
+}
+
+.searchInput {
+    height: 50px;
+    width: 100%;
+    border-color: #3B9AE1;
+    border-width: 3px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    padding-left: 5%;
+}
+
+.etcBox {
+    display: flex;
+    height: 100%;
+    flex:4;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+.realtime {
+    background-color: white;
+    height: 50px;
+    width:50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.realtimeText {
+    color:#3B9AE1;
+    font-size: 30px;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Cafe24Ssurround';
+    font-size: 20px;
+}
+a:hover {
+    color:grey
+}
+
+.menubox {
+    display: flex;
+    height: 100%;
+    flex:3;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    
+}
+
+.menuside {
+    flex:2;
+}
+
+
+
+
+.side {
+    flex-basis: 15%;
+}
+
+.main {
+    flex-basis: 80%;
+}
+
+.center {
+    flex-basis: 70%;
+    
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.layout {
+    width: 33%;
+    border: none;
+    float: left;
+}
+
+.btn-layout {
+    width : 90%;
+    background-color: #E5EBF7;
+    border: none;
+    margin-bottom : 2px;
+    margin-top: 2px;
+    padding-top : 5px;
+    height: 40px;
+}
+
+.btn-font {
+    font-family: 'Cafe24Ssurround';
+    font-size : 1.2rem;
+    font-weight: bold;
+}

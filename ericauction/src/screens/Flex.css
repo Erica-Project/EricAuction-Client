@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.containerTitlecategory {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.headerbar {
+    position: sticky;
+    top:0;
+}
+
+
+.side {
+    flex-basis: 15%;
+}
+
+.main {
+    flex-basis: 80%;
+}
+
+.center {
+    flex-basis: 70%;
+    
+}
+
+.height10{
+    height: 10%;
+}
+.height20 {
+    height: 20%;
+}
+.height30 {
+    height: 30%;
+}
+.height40 {
+    height: 40%;
+}
+.height50 {
+    height: 50%;
+}
