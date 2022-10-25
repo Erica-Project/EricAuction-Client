@@ -53,7 +53,7 @@ const Category = () => {
                 {category && SubCategories[category].map((data: string) => <button className="btn-layout btn-font">{data}</button>)}
             </div>
             <div className="layout">
-                윤석열
+                
             </div>
         </div>
     )
