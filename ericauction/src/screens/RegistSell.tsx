@@ -4,6 +4,8 @@ import HorizonLine from "./Horizontalline";
 import { useState, useEffect, ReactEventHandler } from "react";
 import React from "react";
 import Category from "./Category";
+import ItemStatus from "./ItemStatus";
+import Registbtn from "./Registbtn";
 
 function RegistSell() {
   const [category, setCategory] = useState("");
@@ -31,8 +33,6 @@ function RegistSell() {
 
   return (
     <div>
-      <header>
-      </header>
       <div className="container">
         <div className="side"></div>
         <div className="center">
@@ -57,19 +57,19 @@ function RegistSell() {
             </div>
           </div>
           <HorizonLine />
-          <div className="containerTitle">
+          <div className="containerTitle height10">
             <div className="side">
               <span className="title">제목</span>
             </div>
             <div className="main">
               <input
                 className="titleInput"
-                placeholder="제목을 입력해주세요."
+                placeholder="제목을 입력해주세요"
               ></input>
             </div>
           </div>
           <HorizonLine />
-          <div className="containerTitlecategory">
+          <div className="containerTitlecategory height30">
             <div className="side">
               <span className="title">카테고리</span>
             </div>
@@ -78,26 +78,12 @@ function RegistSell() {
             </div>
           </div>
           <HorizonLine />
-          <div className="containerTitle">
-            <div className="side">
-              <span className="title">세부 카테고리</span>
-            </div>
-            <div className="main">
-
-            </div>
-          </div>
-          <HorizonLine />
-          <div className="containerTitle">
+          <div className="containerTitle height10">
             <div className="side">
               <span className="title">제품상태</span>
             </div>
             <div className="main">
-              <div>
-                <input type="radio" id="중고 상품" value="중고 상품" />
-                중고상품
-                <input type="radio" id="새 상품" value="새 상품"></input>
-                새상품
-              </div>
+              <ItemStatus />
             </div>
           </div>
           <HorizonLine />
@@ -141,6 +127,7 @@ function RegistSell() {
         </div>
         <div className="side"></div>
       </div>
+      <Registbtn/>
     </div>
   );
 }

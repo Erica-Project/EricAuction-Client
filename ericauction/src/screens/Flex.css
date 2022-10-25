@@ -7,7 +7,6 @@
 .containerTitle {
     display: flex;
     flex-direction: row;
-    height: 40%;
     align-items: center;
 }
 .containerTitlecategory {
@@ -33,4 +32,20 @@
 .center {
     flex-basis: 60%;
     
+}
+
+.height10{
+    height: 10%;
+}
+.height20 {
+    height: 20%;
+}
+.height30 {
+    height: 30%;
+}
+.height40 {
+    height: 40%;
+}
+.height50 {
+    height: 50%;
 }

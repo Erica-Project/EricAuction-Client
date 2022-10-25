@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.regist-btn{
+    width :15%;
+    hegith : 50px;
+    margin-top : 15%; 
+    margin-bottom : 10%;
+    background-color: #c3e5f1;
+    font-size:30px;
+    font-family : 'Cafe24Ssurround';
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 15px;
+    border: 2px solid grey;
+}
