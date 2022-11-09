@@ -1,5 +1,52 @@
-.homecenter{
-    width: 100%;
-    height: 100%;
-    text-align: center;
+.color {
+    background-color: yellow;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.side {
+    flex-basis: 15%;
+    background-color: red;
+}
+
+.homecenter {
+    margin-top: 3%;
+    flex-basis: 70%;
+}
+
+.imglayout {
+    margin-left : 10%;
+    width: 80%;
+    height : 200px;
+    border : 1px solid;
+}
+
+.registedItemContainer {
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.itemContainer{
+    margin-top: 20px;
+}
+
+.item{
+    width: 18%;
+    height: 300px;
+    border: 1px solid red;
+    display : inline-block;
+    margin-right: 0.5%;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.itemImage{
+    width:95%;
+    margin: auto;
+    height: 200px;
+    border: 1px solid;
 }
