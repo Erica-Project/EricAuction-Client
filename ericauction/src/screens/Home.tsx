@@ -9,9 +9,10 @@ function Home() {
         <div style={{height:100}}>
             
         </div>
+        <div style={{height:200}}></div>
         <div className='homecenter'>
             <RegistSell />
-            {/* <span style={{fontSize:100}}>í™ˆ í™”ë©´ìž…ë‹ˆë‹¤</span> */}
+            {/* <span style={{fontSize:100}}>?™ˆ ?™”ë©´ìž…?‹ˆ?‹¤</span> */}
         </div>
     </div>
   );
